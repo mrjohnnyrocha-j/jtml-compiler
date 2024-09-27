@@ -1,0 +1,15 @@
+<template>
+    <div>
+        <h3>Messages</h3>
+        <ul>
+            <li for="message in messages">
+                <span>{{ message.user }}: {{ message.text }}</span>
+            </li>
+        </ul>
+    </div>
+</template>
+<script>
+export function component_ChatMessages() {
+    const messages = fetchMessages(); // Fetch messages from a WebSocket or API
+}
+</script>

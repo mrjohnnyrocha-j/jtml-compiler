@@ -1,0 +1,94 @@
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg" version="1.1">
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="black" />
+
+  <!-- Vortex Circles -->
+  <circle cx="200" cy="200" r="180" fill="none" stroke="white" stroke-width="4" />
+  <circle cx="200" cy="200" r="140" fill="none" stroke="white" stroke-width="3" />
+  <circle cx="200" cy="200" r="100" fill="none" stroke="white" stroke-width="2" />
+  <circle cx="200" cy="200" r="60" fill="none" stroke="white" stroke-width="1" />
+
+  <!-- Dots as unit elements -->
+  <circle cx="200" cy="70" r="15" fill="white" />
+  <circle cx="200" cy="330" r="15" fill="black" stroke="white" stroke-width="2" />
+
+  <!-- Yin-Yang Shading -->
+  <circle cx="200" cy="200" r="180" fill="none" stroke="white" stroke-width="4" />
+  <path d="M 200 20 A 180 180 0 1 0 200 380 A 180 180 0 1 1 200 20 Z" fill="white" />
+  <path d="M 200 20 A 180 180 0 0 1 200 380 A 180 180 0 0 0 200 20 Z" fill="black" />
+
+  <!-- Yin-Yang Center Circles -->
+  <circle cx="200" cy="110" r="30" fill="white" />
+  <circle cx="200" cy="290" r="30" fill="black" />
+
+  <!-- Central 'J$' Combination with Yin-Yang Symmetry Effect -->
+  <!-- Original 'J$' -->
+  <text x="185" y="220" font-family="Arial" font-size="40" fill="white" text-anchor="middle">
+    J$
+  </text>
+
+  <!-- Rotated by 90 degrees -->
+  <text x="185" y="220" font-family="Arial" font-size="40" fill="white" text-anchor="middle" transform="rotate(90 200 200)">
+    J$
+  </text>
+
+  <!-- Rotated by 180 degrees -->
+  <text x="185" y="220" font-family="Arial" font-size="40" fill="white" text-anchor="middle" transform="rotate(180 200 200)">
+    J$
+  </text>
+
+  <!-- Rotated by 270 degrees -->
+  <text x="185" y="220" font-family="Arial" font-size="40" fill="white" text-anchor="middle" transform="rotate(270 200 200)">
+    J$
+  </text>
+
+  <!-- Mirrored across the x-axis for symmetry -->
+  <text x="185" y="220" font-family="Arial" font-size="40" fill="white" text-anchor="middle" transform="scale(-1,1) translate(-400, 0)">
+    J$
+  </text>
+
+  <!-- Mirrored and rotated for extra symmetry effect -->
+  <text x="185" y="220" font-family="Arial" font-size="40" fill="white" text-anchor="middle" transform="scale(-1,1) translate(-400, 0) rotate(90 200 200)">
+    J$
+  </text>
+
+  <text x="185" y="220" font-family="Arial" font-size="40" fill="white" text-anchor="middle" transform="scale(-1,1) translate(-400, 0) rotate(180 200 200)">
+    J$
+  </text>
+
+  <text x="185" y="220" font-family="Arial" font-size="40" fill="white" text-anchor="middle" transform="scale(-1,1) translate(-400, 0) rotate(270 200 200)">
+    J$
+  </text>
+
+  <!-- Fractal-Like Geometries on the Vortex Circles -->
+  <!-- Small fractal-like squares around the perimeter -->
+  <rect x="200" y="60" width="20" height="20" fill="white" transform="rotate(0 200 200)" />
+  <rect x="200" y="340" width="20" height="20" fill="white" transform="rotate(180 200 200)" />
+  <rect x="60" y="200" width="20" height="20" fill="white" transform="rotate(90 200 200)" />
+  <rect x="340" y="200" width="20" height="20" fill="white" transform="rotate(270 200 200)" />
+
+  <!-- Rotating fractal-like pattern of circles and squares -->
+  <!-- Inner rotation -->
+  <g transform="rotate(45 200 200)">
+    <circle cx="200" cy="60" r="10" fill="white" />
+    <circle cx="200" cy="340" r="10" fill="white" />
+    <rect x="190" y="60" width="20" height="20" fill="black" />
+    <rect x="190" y="340" width="20" height="20" fill="black" />
+  </g>
+
+  <!-- Outer layer rotating fractals -->
+  <g transform="rotate(135 200 200)">
+    <circle cx="200" cy="60" r="10" fill="black" />
+    <circle cx="200" cy="340" r="10" fill="black" />
+    <rect x="190" y="60" width="20" height="20" fill="white" />
+    <rect x="190" y="340" width="20" height="20" fill="white" />
+  </g>
+
+  <!-- More fractal pattern on concentric circles -->
+  <g transform="rotate(22.5 200 200)">
+    <circle cx="60" cy="200" r="10" fill="white" />
+    <rect x="190" y="60" width="20" height="20" fill="black" />
+  </g>
+
+</svg>

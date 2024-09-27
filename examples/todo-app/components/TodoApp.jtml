@@ -1,0 +1,36 @@
+<component name="TodoApp">
+  <template>
+    <div id="todoApp">
+      <h1 class="title">My Todo App</h1>
+      <add-task></add-task>
+      <task-filter></task-filter>
+      <task-list></task-list>
+    </div>
+  </template>
+
+  <script>
+    let tasks = [];
+
+    function addTask(task) {
+      tasks.push({ task: task, completed: false });
+      updateTaskList();
+    }
+
+    function toggleTaskCompletion(index) {
+      tasks[index].completed = !tasks[index].completed;
+      updateTaskList();
+    }
+
+    function updateTaskList() {
+      const event = new CustomEvent('tasksUpdated', { detail: tasks });
+      document.querySelector('task-list').dispatchEvent(event);
+    }
+  </script>
+
+  <style>
+    .title {
+      font-family: Arial, sans-serif;
+      color: #333;
+    }
+  </style>
+</component>

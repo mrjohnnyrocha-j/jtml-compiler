@@ -1,0 +1,20 @@
+<template>
+    <div>
+        <h4>Comments</h4>
+        <ul>
+            <li for="comment in comments">{{ comment.content }}</li>
+        </ul>
+        <input type="text" placeholder="Add a comment" bind="newComment.content" />
+        <button onClick="addComment()">Submit</button>
+    </div>
+</template>
+<script>
+export function component_CommentSection(post_id) {
+    const comments = fetchComments(post_id); // Fetch comments based on post_id
+    let newComment = { content: '' };
+    
+    function addComment() {
+        // Logic to add a new comment
+    }
+}
+</script>

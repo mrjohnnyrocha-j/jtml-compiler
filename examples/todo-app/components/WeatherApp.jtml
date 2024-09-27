@@ -1,0 +1,5 @@
+<template>
+    <h1>Weather Dashboard</h1>
+    <component name="CitySearch" />
+    <component name="WeatherDisplay" />
+</template>

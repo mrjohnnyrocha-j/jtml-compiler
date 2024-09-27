@@ -1,0 +1,17 @@
+<template>
+    <div>
+        <h2>{{ weather.city }}</h2>
+        <p>Temperature: {{ weather.temperature }}°C</p>
+        <p>Condition: {{ weather.condition }}</p>
+    </div>
+</template>
+<script>
+export function component_WeatherDisplay() {
+    let weather = { city: '', temperature: '', condition: '' };
+    
+    // Function to update the weather data, called from CitySearch component
+    function updateWeather(data) {
+        weather = data;
+    }
+}
+</script>

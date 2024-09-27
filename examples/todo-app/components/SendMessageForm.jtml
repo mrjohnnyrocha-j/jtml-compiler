@@ -1,0 +1,13 @@
+<template>
+    <input type="text" placeholder="Type a message" bind="newMessage.text" />
+    <button onClick="sendMessage()">Send</button>
+</template>
+<script>
+export function component_SendMessageForm() {
+    let newMessage = { user: 'User1', text: '' };
+    
+    function sendMessage() {
+        // Logic to send a message via WebSocket or API
+    }
+}
+</script>

@@ -1,0 +1,12 @@
+<template>
+    <ul>
+        <li for="expense in expenses">
+            {{ expense.name }} - {{ expense.amount }} USD ({{ expense.category }})
+        </li>
+    </ul>
+</template>
+<script>
+export function component_ExpenseList() {
+    const expenses = fetchExpenses(); // Fetch expenses from storage or API
+}
+</script>

@@ -1,0 +1,5 @@
+<template>
+    <h1>Chat Room</h1>
+    <component name="ChatMessages" />
+    <component name="SendMessageForm" />
+</template>

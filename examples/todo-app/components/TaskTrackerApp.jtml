@@ -1,0 +1,5 @@
+<template>
+    <h1>Task Tracker</h1>
+    <component name="TaskList" />
+    <component name="AddTaskForm" />
+</template>

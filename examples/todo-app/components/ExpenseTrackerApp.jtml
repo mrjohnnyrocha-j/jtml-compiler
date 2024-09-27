@@ -1,0 +1,5 @@
+<template>
+    <h1>Expense Tracker</h1>
+    <component name="ExpenseList" />
+    <component name="AddExpenseForm" />
+</template>

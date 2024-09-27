@@ -1,0 +1,16 @@
+<template>
+    <form>
+        <input type="text" placeholder="Title" bind="newPost.title" />
+        <textarea placeholder="Content" bind="newPost.content"></textarea>
+        <button onClick="addPost()">Add Post</button>
+    </form>
+</template>
+<script>
+export function component_NewPostForm() {
+    let newPost = { title: '', content: '' };
+    
+    function addPost() {
+        // Logic to submit post
+    }
+}
+</script>

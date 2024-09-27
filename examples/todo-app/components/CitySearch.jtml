@@ -1,0 +1,13 @@
+<template>
+    <input type="text" placeholder="Enter city" bind="city" />
+    <button onClick="fetchWeather()">Get Weather</button>
+</template>
+<script>
+export function component_CitySearch() {
+    let city = '';
+
+    function fetchWeather() {
+        // Call the weather API and pass the city
+    }
+}
+</script>

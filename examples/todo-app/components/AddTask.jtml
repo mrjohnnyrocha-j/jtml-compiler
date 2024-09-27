@@ -1,0 +1,20 @@
+<template>
+    <form>
+        <input type="text" placeholder="Task Name" bind="newTask.name" />
+        <select bind="newTask.priority">
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+        </select>
+        <button onClick="addTask()">Add Task</button>
+    </form>
+</template>
+<script>
+export function component_AddTaskForm() {
+    let newTask = { name: '', priority: 'low' };
+    
+    function addTask() {
+        // Logic to add task
+    }
+}
+</script>

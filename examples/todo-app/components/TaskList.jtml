@@ -1,0 +1,17 @@
+<template>
+    <ul>
+        <li for="task in tasks">
+            <span>{{ task.name }} - Priority: {{ task.priority }}</span>
+            <button onClick="removeTask(task.id)">Delete</button>
+        </li>
+    </ul>
+</template>
+<script>
+export function component_TaskList() {
+    const tasks = fetchTasks(); // Assume fetchTasks() gets tasks from API or local storage
+
+    function removeTask(id) {
+        // Remove task logic
+    }
+}
+</script>

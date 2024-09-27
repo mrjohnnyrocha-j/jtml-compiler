@@ -1,0 +1,22 @@
+<template>
+    <form>
+        <input type="text" placeholder="Expense Name" bind="newExpense.name" />
+        <input type="number" placeholder="Amount" bind="newExpense.amount" />
+        <select bind="newExpense.category">
+            <option value="food">Food</option>
+            <option value="transport">Transport</option>
+            <option value="entertainment">Entertainment</option>
+            <option value="other">Other</option>
+        </select>
+        <button onClick="addExpense()">Add Expense</button>
+    </form>
+</template>
+<script>
+export function component_AddExpenseForm() {
+    let newExpense = { name: '', amount: '', category: 'food' };
+    
+    function addExpense() {
+        // Logic to add expense
+    }
+}
+</script>

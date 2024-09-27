@@ -1,0 +1,18 @@
+<template>
+    <div>
+        <h2>Recent Posts</h2>
+        <ul>
+            <li for="post in posts">
+                <h3>{{ post.title }}</h3>
+                <p>{{ post.content }}</p>
+                <component name="CommentSection" post_id="{{ post.id }}" />
+            </li>
+        </ul>
+    </div>
+</template>
+
+<script>
+export function component_PostList() {
+    const posts = fetchPosts(); // Assuming fetchPosts() fetches posts from an API
+}
+</script>
